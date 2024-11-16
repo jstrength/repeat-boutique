@@ -1,88 +1,110 @@
 <html>
-  <head>
-    <title>Repeat Boutique Boise</title>
-    <style>
-.header-container { display: flex; justify-content: space-between; gap: 1rem; align-items: center; margin: 0 0.5rem; }
-.header-title { font-size: 58px; color: #c71586; font-weight: bold; text-align: center; }
-.header-number { position: relative; left: -15rem; top: 3rem; }
-.clothes-container { display: flex; justify-content: center; gap: 3em; }
-.clothes-list { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; font: normal normal 17px Arial,Helvetica,sans-serif; }
-.footer-container { background-color: #E8E8E8E8; padding: 1em; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
-body { margin: 0; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; font: initial; }
-hr { margin: 1em 15em; height: 2px; background-color: black; }
-p { margin: 0 }
-h1 { text-align: center; color: #c71586; width: 70%; margin: auto; }
-h3, h4 { text-align: center; }
-ol { list-style-position: inside; }
-    </style>
-  </head>
-  <body>
-    <div class="header-container">
-      <img width="37%" src="./index.png">
-      <b class="header-number"> <a href="tel:1-208-389-4623"> 1-208-389-4623 </a> </b>
-      <div class="clothes-list"> 
-        <span class="header-title"> BUY • SELL </span>  
-        <span class="header-title"> TRADE • CONSIGN </span>
-      </div>
-    </div>
-    <img width="100%" src="./storefront.jpg">
-    <h1> We are an established consignment store recycling clothing in Boise for over 27 years </h1>
-    <hr>
-    <h3>Three Easy Steps</h3>
-    <div class="clothes-container">
-      <ol>
-        <li> Clean out your closets. </li>
-        <li> Bring in your clean unwanted items. </li>
-        <li> A buyer will evaluate each item to potentially either buy or consign it. </li>
-      </ol>
-    </div>
-    <hr>
-    <p>
-      <h1>WE PAY 40-50% CASH BACK</h1>
-      <h4>Items We're Looking For</h4>
-      <div class="clothes-container">
-        <div class="clothes-list">
-          <span> Tops / Blouses </span>
-          <span> Sweaters </span>
-          <span> Jeans </span>
-          <span> Pants </span>
-          <span> Dresses </span>
-          <span> Skirts </span>
-          <span> Shorts </span>
-        </div>
-        <div class="clothes-list">
-          <span> Formals </span>
-          <span> Blazers </span>
-          <span> Jackets </span>
-          <span> Coats </span>
-          <span> Hand Bags </span>
-          <span> Wallets </span>
-          <span> Jewelry </span>
-        </div>
-        <div class="clothes-list">
-          <span> Swimwear </span>
-          <span> Belts </span>
-          <span> Scarves </span>
-          <span> Hats </span>
-          <span> Perfume </span>
-          <span> Shoes / Boots </span>
-          <span> Workout Clothing </span>
-        </div>
-      </div>
-    </p>
-    <img src="./clothes.jpg">
+<head>
+  <title>Repeat Boutique Boise</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
+  <style>
+    .header-container { display: flex; justify-content: center; align-items: center; margin: 0.5rem; }
+    .header-title { font-size: 58px; color: #c71586; font-weight: bold; text-align: center; }
+    .header-number { position: relative; left: -10rem; top: -1rem; }
+    .clothes-container { display: flex; justify-content: center; gap: 3em; }
+    .clothes-list { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; font: normal normal 17px Arial,Helvetica,sans-serif; }
+    .footer-container { display: flex; justify-content: space-between; background-color: #E8E8E8E8; padding: 1em; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+    .gallary-container { text-align: center; margin: 1rem 0; }
+    body { margin: auto; max-width: 1800px; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; font: initial; }
+    hr { margin: 1em 15em; height: 2px; background-color: black; }
+    p { margin: 0 }
+    h1 { text-align: center; color: #c71586; width: 70%; margin: auto; font-size: 3rem; }
+    h3, h4 { text-align: center; font-size: 2rem; }
+    ol { list-style-position: inside; margin-top: -10px; }
+    li { font-weight: bold; font-size: 1.2rem; }
+  </style>
+  <script>
+    function gallary() {
+      const pics = 'images/clothes/';
+      let img_num = 1;
+      setInterval(function() {
+        const gallary_html = document.getElementById('gallary');
+        gallary_html.src = pics + img_num + '.jpg';
+        img_num = (img_num % 24) + 1;
+      } , 3000, img_num);
+    }
+    gallary();
+  </script>
+</head>
+<body>
+<div class="header-container">
+  <div>
+    <img width="75%" src="images/signature.png">
+    <b class="header-number"> <a href="tel:1-208-389-4623"> 1-208-389-4623 </a> </b>
+  </div>
+  <div class="clothes-list">
+    <span class="header-title"> BUY &#x2022 SELL </span>
+    <span class="header-title"> TRADE &#x2022 CONSIGN </span>
+  </div>
+</div>
+<img width="100%" src="images/storefront.jpg">
+<h1> We are an established consignment store recycling clothing in Boise for over 27 years </h1>
+<hr>
+<h3>Three Easy Steps</h3>
+<div class="clothes-container">
+  <ol>
+    <li> Clean out your closets. </li>
+    <li> Bring in your clean unwanted items. </li>
+    <li> A buyer will evaluate each item to potentially either buy or consign it. </li>
+  </ol>
+</div>
+<hr>
+<p>
+<h1>WE PAY 40-50% CASH BACK</h1>
+<h3>Items We're Looking For</h3>
+<div class="clothes-container">
+  <div class="clothes-list">
+    <span> Tops / Blouses </span>
+    <span> Sweaters </span>
+    <span> Jeans </span>
+    <span> Pants </span>
+    <span> Dresses </span>
+    <span> Skirts </span>
+    <span> Shorts </span>
+  </div>
+  <div class="clothes-list">
+    <span> Formals </span>
+    <span> Blazers </span>
+    <span> Jackets </span>
+    <span> Coats </span>
+    <span> Hand Bags </span>
+    <span> Wallets </span>
+    <span> Jewelry </span>
+  </div>
+  <div class="clothes-list">
+    <span> Swimwear </span>
+    <span> Belts </span>
+    <span> Scarves </span>
+    <span> Hats </span>
+    <span> Perfume </span>
+    <span> Shoes / Boots </span>
+    <span> Workout Clothing </span>
+  </div>
+</div>
+</p>
+<div class="gallary-container">
+  <img id="gallary" src="images/clothes/1.jpg">
+</div>
 
-    <div class="footer-container">
-      <h2> Repeat Boutique </h2>
+<div class="footer-container">
+  <div>
+    <h2> Repeat Boutique </h2>
 
-      <p> Open Tues-Fri 11-6 Sat 11-5 </p>
-      <p> Closed Sundays & Mondays </p>
-      <br>
-      <p> 500 S Vista Ave, Boise, ID 83705 </p>
-      <p> Corner of Vista and Rosehill </p>
+    <p> Open Tues-Fri 11-6 Sat 11-5 </p>
+    <p> Closed Sundays & Mondays </p>
+    <br>
+    <p> 500 S Vista Ave, Boise, ID 83705 </p>
+    <p> Corner of Vista and Rosehill </p>
 
-      <a href="tel:1-208-389-4623">1-208-389-4623</a>
-      <h4 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h4>
-    </div>
-  </body>
+    <a href="tel:1-208-389-4623">1-208-389-4623</a>
+    <h4 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h4>
+  </div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11557.317396591874!2d-116.2131347!3d43.5996837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7c6ae5254a3a134!2sRepeat+Boutique!5e0!3m2!1sen!2sus!4v1543012859399" width="320" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</body>
 </html>
