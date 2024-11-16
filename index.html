@@ -2,20 +2,24 @@
   <head>
     <title>Repeat Boutique Boise</title>
     <style>
-.header-container { display: flex; justify-content: center; gap: 1em; align-items: center; }
-.header-title { font-size: 58px; color: pink; }
-.clothes-container { display: flex; justify-content: center; gap: 1em; }
-.clothes-list { display: flex; flex-direction: column;  }
-body { margin: 0; }
+.header-container { display: flex; justify-content: space-between; gap: 1rem; align-items: center; margin: 0 0.5rem; }
+.header-title { font-size: 58px; color: #c71586; font-weight: bold; text-align: center; }
+.header-number { position: relative; left: -15rem; top: 3rem; }
+.clothes-container { display: flex; justify-content: center; gap: 3em; }
+.clothes-list { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; font: normal normal 17px Arial,Helvetica,sans-serif; }
+.footer-container { background-color: #E8E8E8E8; padding: 1em; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+body { margin: 0; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; font: initial; }
+hr { margin: 1em 15em; height: 2px; background-color: black; }
 p { margin: 0 }
-h1, h3, h4 { text-align: center; }
+h1 { text-align: center; color: #c71586; width: 70%; margin: auto; }
+h3, h4 { text-align: center; }
 ol { list-style-position: inside; }
     </style>
   </head>
   <body>
     <div class="header-container">
       <img width="37%" src="./index.png">
-      <b> <a href="tel:1-208-389-4623"> 1-208-389-4623 </a> </b>
+      <b class="header-number"> <a href="tel:1-208-389-4623"> 1-208-389-4623 </a> </b>
       <div class="clothes-list"> 
         <span class="header-title"> BUY • SELL </span>  
         <span class="header-title"> TRADE • CONSIGN </span>
@@ -68,17 +72,17 @@ ol { list-style-position: inside; }
     </p>
     <img src="./clothes.jpg">
 
-    <div style="background-color: lightgrey">
+    <div class="footer-container">
       <h2> Repeat Boutique </h2>
 
       <p> Open Tues-Fri 11-6 Sat 11-5 </p>
       <p> Closed Sundays & Mondays </p>
-
+      <br>
       <p> 500 S Vista Ave, Boise, ID 83705 </p>
       <p> Corner of Vista and Rosehill </p>
 
       <a href="tel:1-208-389-4623">1-208-389-4623</a>
-      <h3> FOLLOW US ON SOCIAL MEDIA </h3>
+      <h4 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h4>
     </div>
   </body>
 </html>
