@@ -3,20 +3,39 @@
   <title>Repeat Boutique Boise</title>
   <link rel="icon" type="image/x-icon" href="/images/favicon.jpg">
   <style>
-    .header-container { display: flex; justify-content: center; align-items: center; margin: 0.5rem; }
+    .header-container { display: flex; flex-direction: column; justify-content: center; align-items: center; margin: 0.5rem; }
     .header-title { font-size: 58px; color: #c71586; font-weight: bold; text-align: center; }
-    .header-number { position: relative; left: -10rem; top: -1rem; }
+    .header-number { position: relative; left: 40rem; top: -3rem; font-size: xx-large; }
+    .header-signature { width: 100% }
     .clothes-container { display: flex; justify-content: center; gap: 3em; }
     .clothes-list { display: flex; flex-direction: column; align-items: center; gap: 0.3rem; font: normal normal 17px Arial,Helvetica,sans-serif; }
-    .footer-container { display: flex; justify-content: space-between; background-color: #E8E8E8E8; padding: 1em; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; }
+    .footer-container { display: flex; gap: 1rem; padding: 0 0 1rem 5rem; justify-content: space-between; flex-direction: column; background-color: #E8E8E8E8; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: normal; }
     .gallary-container { text-align: center; margin: 1rem 0; }
-    body { margin: auto; max-width: 1800px; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; font: initial; }
-    hr { margin: 1em 15em; height: 2px; background-color: black; }
+    body { margin: 0; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; }
+    hr { height: 2px; background-color: black; }
     p { margin: 0 }
-    h1 { text-align: center; color: #c71586; width: 70%; margin: auto; font-size: 3rem; }
+    h1 { text-align: center; color: #c71586; margin: auto; font-size: 3rem; }
     h3, h4 { text-align: center; font-size: 2rem; }
     ol { list-style-position: inside; margin-top: -10px; }
     li { font-weight: bold; font-size: 1.2rem; }
+    @media only screen and (min-width: 1000px) {
+      .header-container { flex-direction: row; }
+      .header-title {}
+      .header-number { position: relative; left: -10rem; top: -1rem; font-size: initial; }
+      .header-signature { width: 75% }
+      .clothes-container {}
+      .clothes-list {}
+      .footer-container { flex-direction: row; gap: 0; padding: 1rem; }
+      .gallary-container {}
+      body { margin: auto; max-width: 1800px; }
+      hr { margin: 1em 15em; height: 2px; background-color: black; }
+      p {}
+      h1 { width: 70%; }
+      h3, h4 {}
+      ol {}
+      li {}
+    }
+
   </style>
   <script>
     function gallary() {
@@ -32,9 +51,11 @@
   </script>
 </head>
 <body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v21.0"></script>
 <div class="header-container">
   <div>
-    <img width="75%" src="images/signature.png">
+    <img class="header-signature" src="images/signature.png">
     <b class="header-number"> <a href="tel:1-208-389-4623"> 1-208-389-4623 </a> </b>
   </div>
   <div class="clothes-list">
@@ -42,7 +63,7 @@
     <span class="header-title"> TRADE &#x2022 CONSIGN </span>
   </div>
 </div>
-<img width="100%" src="images/storefront.jpg">
+<img style="margin-bottom: 2rem" width="100%" src="images/storefront.jpg">
 <h1> We are an established consignment store recycling clothing in Boise for over 27 years </h1>
 <hr>
 <h3>Three Easy Steps</h3>
@@ -102,7 +123,10 @@
     <p> Corner of Vista and Rosehill </p>
 
     <a href="tel:1-208-389-4623">1-208-389-4623</a>
-    <h4 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h4>
+  </div>
+  <div style="width: 50%;">
+    <h5 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h5>
+    <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100051621565943" data-width="380" data-hide-cover="false" data-show-facepile="false"></div>
   </div>
   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11557.317396591874!2d-116.2131347!3d43.5996837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7c6ae5254a3a134!2sRepeat+Boutique!5e0!3m2!1sen!2sus!4v1543012859399" width="320" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
