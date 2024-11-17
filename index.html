@@ -12,6 +12,7 @@
     .footer-container { display: flex; gap: 1rem; padding: 0 0 1rem 5rem; justify-content: space-between; flex-direction: column; background-color: #E8E8E8E8; font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; font-weight: initial }
     .gallary-container { text-align: center; margin: 1rem 0; }
     .map-location { width: 80%; height: 500px; }
+    .social-img { min-height: 128px; }
     body { margin: 0; font: normal bold 2rem 'Palanquin Dark',Arial,sans-serif; background-color: whitesmoke; }
     hr { height: 2px; background-color: black; }
     p { margin: 0 }
@@ -31,6 +32,7 @@
       .footer-container { flex-direction: row; gap: 0; padding: 1rem; }
       .gallary-container {}
       .map-location { width: 320px; height: 250px; }
+      .social-img { min-height: initial; }
       body { margin: auto; max-width: 1800px; font: normal bold 18px 'Palanquin Dark',Arial,sans-serif; }
       hr { margin: 1em 15em; height: 2px; background-color: black; }
       p {}
@@ -39,7 +41,6 @@
       ol {}
       li { font-size: 1.2rem; }
     }
-
   </style>
   <script>
     function gallary() {
@@ -126,13 +127,13 @@
 
     <a href="tel:1-208-389-4623">1-208-389-4623</a>
   </div>
-  <div style="width: 50%;">
+  <div>
     <h5 style="text-align: left"> FOLLOW US ON SOCIAL MEDIA </h5>
     <a href="https://www.facebook.com/profile.php?id=100051621565943" target="_blank">
-      <img src="images/facebook.png">
+      <img class="social-img" src="images/facebook.png">
     </a>
     <a href="https://www.instagram.com/repeatboutiqueboise/" target="_blank">
-      <img src="images/instagram.png">
+      <img class="social-img" src="images/instagram.png">
     </a>
   </div>
   <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11557.317396591874!2d-116.2131347!3d43.5996837!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd7c6ae5254a3a134!2sRepeat+Boutique!5e0!3m2!1sen!2sus!4v1543012859399" frameborder="0" style="border:0" allowfullscreen></iframe>
